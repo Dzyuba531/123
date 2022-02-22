@@ -1,0 +1,26 @@
+package com.max.idea;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            System.out.println("с повино бути 5, 0 або -5");
+            System.out.println("Введіть c: ");
+            int c = in.nextInt();
+            System.out.println("Введіть b: ");
+            int b = in.nextInt();
+            if(c==5){
+                System.out.println(Math.sqrt(b)+(2*Math.sqrt(c)));
+            }
+            else if(c==0){
+                System.out.println(b/(c+6));
+            }
+            else if(c==-5){
+                System.out.println(b+(12*(c*c*c)));
+            }
+            else{
+                System.out.println("с повино бути 5, 0 або -5");
+            }
+    }
+}
